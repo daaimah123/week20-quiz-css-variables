@@ -3,11 +3,11 @@ import './App.css';
 
 function App() {
     useEffect(() => {
-        // const color = getComputedStyle(document.documentElement).getPropertyValue();
+        // Step 2
     }, []);
 
     function setColor(newColor) {
-        // document.documentElement.style.setProperty();
+        // Step 3
     }
 
     function handleOSizeChange(event) {
@@ -32,7 +32,7 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <p>
-                    {/* Dynamically resizing the logo with a custom CSS Property */}
+                    {/* BONUS: Dynamically resizing the logo with a custom CSS Property */}
                     <input />
                 </p>
                 <p onClick={onSVGClick}>
@@ -49,10 +49,10 @@ function App() {
 
                 </p>
                 <p>
-                    {/* Creates three buttons that can instantly set the color of the app logo to the one defined in each. */}
-                    <button>orange</button>
-                    <button>blueviolet</button>
-                    <button>red</button>
+                    {/* Step 3: Creates three buttons that can instantly set the color of the app logo to the one defined in each. */}
+                    <button></button>
+                    <button></button>
+                    <button></button>
                 </p>
             </header>
         </div>

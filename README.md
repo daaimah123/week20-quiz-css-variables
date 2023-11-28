@@ -28,6 +28,11 @@ useEffect(() => {
 Create a constant that uses the `getComputedStyle()` function to fetch the value of its style.
 Pass the root element (`document.documentElement`) as an argument, along with the your color variable (i.e. `--logo-color`) variable.
 
+```
+const color = getComputedStyle(document.documentElement).getPropertyValue('--logo-color');
+```
+
+
 ### Step 3 - Setting up the value of a CSS custom property with JavaScript
 
 In the `App.js` file, under the `useEffect` function, create a function that sets the color of an element to the one passed as an argument. It will set the style property that is passed in the your color variable with the new one passed as an argument.

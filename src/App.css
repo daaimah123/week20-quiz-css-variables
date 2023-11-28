@@ -7,9 +7,9 @@
   pointer-events: none;
 }
 
-/* create a new styling to apply a color fill to the SVG under the "App-logo" class */
+/* Step 1: create a new styling to apply a color fill to the SVG under the "App-logo" class */
 .App-logo g {
-  fill: var(--logo-color, aqua);
+
 }
 
 @media (prefers-reduced-motion: no-preference) {

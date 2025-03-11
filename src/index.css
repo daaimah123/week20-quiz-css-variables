@@ -2,6 +2,9 @@
   /* Step 1: Add color variables here */
   /* BONUS: Add size variables here */
   --logo-speedTiming: 20s;
+
+  --logo-color:green;
+  --logo-size:40vmin;
 }
 
 body {

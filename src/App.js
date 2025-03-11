@@ -1,4 +1,6 @@
 import {useEffect} from "react";
+import React from 'react';
+
 import './App.css';
 
 function App() {
@@ -7,11 +9,13 @@ function App() {
     }, []);
 
     function setColor(newColor) {
-        // Step 3
+        // Step 3 
+        document.querySelector('.App-logo g').setAttribute('fill', newColor);
     }
 
     function handleOSizeChange(event) {
-        // document.documentElement.style.setProperty('--logo-size', `${}vmin`)
+       const size = event.target.value;
+        document.documentElement.style.setProperty('--logo-size', `${size}vmin`);
     }
 
     function onSVGClick() {
@@ -33,7 +37,7 @@ function App() {
             <header className="App-header">
                 <p>
                     {/* BONUS: Dynamically resizing the logo with a custom CSS Property */}
-                    <input />
+                    <input type="range" min ="5" max="20" onChange={handleOSizeChange} />/
                 </p>
                 <p onClick={onSVGClick}>
 

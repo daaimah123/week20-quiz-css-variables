@@ -4,12 +4,13 @@
 
 .App-logo {
   height: var(--logo-size);
+  width: var(--logo-size);
   pointer-events: none;
 }
 
 /* Step 1: create a new styling to apply a color fill to the SVG under the "App-logo" class */
 .App-logo g {
-
+  fill: var(--logo-color, rgb(207, 12, 12));
 }
 
 @media (prefers-reduced-motion: no-preference) {

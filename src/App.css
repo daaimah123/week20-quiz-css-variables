@@ -1,10 +1,18 @@
+:root {
+  --logo-color: #61dafb; /* Default React logo color */
+  --logo-size: 40vmin;
+  --logo-speedTiming: 20s;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
   height: var(--logo-size);
-  pointer-events: none;
+  /* Change pointer-events to 'all' since you have an onClick handler */
+  pointer-events: all;
+  fill: var(--logo-color); /* This is important for SVG color */
 }
 
 /* create a new styling to apply a color fill to the SVG under the "App-logo" class */
@@ -40,4 +48,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Add styling for the buttons */
+button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }

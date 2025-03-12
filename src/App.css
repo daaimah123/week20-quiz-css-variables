@@ -15,7 +15,7 @@
   fill: var(--logo-color); /* This is important for SVG color */
 }
 
-/* create a new styling to apply a color fill to the SVG under the "App-logo" class */
+/* Step 1: create a new styling to apply a color fill to the SVG under the "App-logo" class */
 .App-logo g {
   fill: var(--logo-color, aqua);
 }
@@ -58,3 +58,4 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+

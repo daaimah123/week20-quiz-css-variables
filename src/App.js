@@ -4,7 +4,8 @@ import "./App.css"
 
 function App() {
   useEffect(() => {
-    // Initialize any necessary logic here if needed
+    const svgElement = document.querySelector('.App-logo');
+    console.log('SVG element:', svgElement);
   }, [])
 
   function setColor(newColor) {

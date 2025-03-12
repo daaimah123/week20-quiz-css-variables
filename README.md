@@ -5,6 +5,7 @@
 ```
 git clone <repo>
 npm i; npm audit fix --force
+npm install ajv
 export NODE_OPTIONS=--openssl-legacy-provider; npm run start
 ```
 
